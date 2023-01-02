@@ -1,0 +1,15 @@
+# Source: cluster-api-aws/templates/cluster.yaml
+apiVersion: cluster.x-k8s.io/v1beta1
+kind: Cluster
+metadata:
+  name: czgdmz0rs
+  namespace: czgdmz0rs
+spec:
+  infrastructureRef:
+    apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    kind: AWSCluster
+    name: czgdmz0rs
+  controlPlaneRef:
+    kind: KubeadmControlPlane
+    apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+    name: "czgdmz0rs-control-plane"
