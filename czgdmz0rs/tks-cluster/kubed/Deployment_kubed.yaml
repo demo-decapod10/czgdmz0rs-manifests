@@ -5,10 +5,10 @@ metadata:
   name: kubed
   namespace: taco-system
   labels:
-    helm.sh/chart: kubed-v0.12.0
+    helm.sh/chart: kubed-v0.13.0
     app.kubernetes.io/name: kubed
     app.kubernetes.io/instance: kubed
-    app.kubernetes.io/version: "v0.12.0"
+    app.kubernetes.io/version: "v0.13.0"
     app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
@@ -29,7 +29,7 @@ spec:
       - name: kubed
         securityContext:
           {}
-        image: appscode/kubed:v0.12.0
+        image: appscode/kubed:v0.13.0
         imagePullPolicy: IfNotPresent
         args:
         - run
